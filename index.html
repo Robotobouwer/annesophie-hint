@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Download</title>
+  <style>
+    html, body {
+      background-color: #B19CD9; /* lila */
+      margin: 0;
+      height: 100%;
+    }
+  </style>
+  <script>
+    window.onload = function() {
+      const link = document.createElement('a');
+      link.href = './hint.waw'; // relatieve link naar static bestand
+      link.download = 'hint.waw';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    };
+  </script>
+</head>
+<body>
+</body>
+</html>
